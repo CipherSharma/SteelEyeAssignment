@@ -1,0 +1,274 @@
+2022-10-02 18:36:42,936:DEBUG:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2022-10-02 18:36:42,937:DEBUG:Changing event name from before-call.apigateway to before-call.api-gateway
+2022-10-02 18:36:42,938:DEBUG:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2022-10-02 18:36:42,939:DEBUG:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2022-10-02 18:36:42,940:DEBUG:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2022-10-02 18:36:42,940:DEBUG:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2022-10-02 18:36:42,942:DEBUG:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2022-10-02 18:36:42,944:DEBUG:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2022-10-02 18:36:42,944:DEBUG:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2022-10-02 18:36:42,945:DEBUG:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2022-10-02 18:36:42,945:DEBUG:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2022-10-02 18:36:42,953:DEBUG:Loading JSON file: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/botocore/data/endpoints.json
+2022-10-02 18:36:42,969:DEBUG:Loading JSON file: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/botocore/data/sdk-default-configuration.json
+2022-10-02 18:36:42,970:DEBUG:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f707e7b30d0>
+2022-10-02 18:36:45,136:DEBUG:Loading JSON file: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2022-10-02 18:36:45,154:DEBUG:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f707e821820>
+2022-10-02 18:36:45,154:DEBUG:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f707eaabdc0>
+2022-10-02 18:36:45,304:DEBUG:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f707e8215e0>
+2022-10-02 18:36:45,306:DEBUG:Setting s3 timeout as (60, 60)
+2022-10-02 18:36:45,315:DEBUG:Loading JSON file: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/botocore/data/_retry.json
+2022-10-02 18:36:45,316:DEBUG:Registering retry handlers for service: s3
+2022-10-02 18:36:45,323:DEBUG:Starting new HTTPS connection (1): registers.esma.europa.eu:443
+2022-10-02 18:36:46,324:DEBUG:https://registers.esma.europa.eu:443 "GET /solr/esma_registers_firds_files/select?q=*&fq=publication_date:%5B2021-01-17T00:00:00Z+TO+2021-01-19T23:59:59Z%5D&wt=xml&indent=true&start=0&rows=100 HTTP/1.1" 200 None
+2022-10-02 18:36:46,328:DEBUG:XML file successfully downloaded
+2022-10-02 18:36:46,332:DEBUG:Entered the xml_extractor Method
+2022-10-02 18:36:46,333:INFO:Succesfully Extracted all the Zip File Download Links
+2022-10-02 18:36:46,334:DEBUG:Starting new HTTP connection (1): firds.esma.europa.eu:80
+2022-10-02 18:36:46,407:DEBUG:http://firds.esma.europa.eu:80 "GET /firds/DLTINS_20210117_01of01.zip HTTP/1.1" 200 4434514
+2022-10-02 18:36:48,767:DEBUG:Starting new HTTP connection (1): firds.esma.europa.eu:80
+2022-10-02 18:36:48,844:DEBUG:http://firds.esma.europa.eu:80 "GET /firds/DLTINS_20210119_01of02.zip HTTP/1.1" 200 15194598
+2022-10-02 18:36:58,993:DEBUG:Starting new HTTP connection (1): firds.esma.europa.eu:80
+2022-10-02 18:36:59,067:DEBUG:http://firds.esma.europa.eu:80 "GET /firds/DLTINS_20210119_02of02.zip HTTP/1.1" 200 12548662
+2022-10-02 18:37:05,117:DEBUG:Starting new HTTP connection (1): firds.esma.europa.eu:80
+2022-10-02 18:37:05,171:DEBUG:http://firds.esma.europa.eu:80 "GET /firds/DLTINS_20210118_01of01.zip HTTP/1.1" 200 58679
+2022-10-02 18:37:05,200:INFO:all the zip files have been downloaded Succesfully
+2022-10-02 18:37:12,791:INFO:all the zip files have been Extracted Succesfully
+2022-10-02 18:37:52,409:DEBUG:Entered the xml_extractor Method
+2022-10-02 18:37:54,890:INFO:Extracted XML file convereted to CSV
+2022-10-02 18:37:54,953:DEBUG:Entered upload_output_file methode Succesfully
+2022-10-02 18:37:54,954:DEBUG:Acquiring 0
+2022-10-02 18:37:54,954:DEBUG:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f707dea53d0>}) about to wait for the following futures []
+2022-10-02 18:37:54,955:DEBUG:UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f707dea53d0>}) done waiting for dependent futures
+2022-10-02 18:37:54,955:DEBUG:Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f707dea53d0>}) with kwargs {'client': <botocore.client.S3 object at 0x7f707e081550>, 'config': <boto3.s3.transfer.TransferConfig object at 0x7f7094cf7b80>, 'osutil': <s3transfer.utils.OSUtils object at 0x7f7094dd4370>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x7f707de97100>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f707dea53d0>}
+2022-10-02 18:37:54,956:DEBUG:Submitting task CreateMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f707de97100> for transfer request: 0.
+2022-10-02 18:37:54,956:DEBUG:Acquiring 0
+2022-10-02 18:37:54,956:DEBUG:CreateMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) about to wait for the following futures []
+2022-10-02 18:37:54,957:DEBUG:Submitting task UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 1, 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f707de97100> for transfer request: 0.
+2022-10-02 18:37:54,957:DEBUG:CreateMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) done waiting for dependent futures
+2022-10-02 18:37:54,957:DEBUG:Acquiring 0
+2022-10-02 18:37:54,957:DEBUG:Executing task CreateMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f707e081550>, 'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}
+2022-10-02 18:37:54,958:DEBUG:UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 1, 'extra_args': {}}) about to wait for the following futures [<s3transfer.futures.ExecutorFuture object at 0x7f707dea5be0>]
+2022-10-02 18:37:54,958:DEBUG:Submitting task UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 2, 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f707de97100> for transfer request: 0.
+2022-10-02 18:37:54,958:DEBUG:Event before-parameter-build.s3.CreateMultipartUpload: calling handler <function validate_ascii_metadata at 0x7f707e747550>
+2022-10-02 18:37:54,959:DEBUG:UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 1, 'extra_args': {}}) about to wait for <s3transfer.futures.ExecutorFuture object at 0x7f707dea5be0>
+2022-10-02 18:37:54,959:DEBUG:Acquiring 0
+2022-10-02 18:37:54,959:DEBUG:Event before-parameter-build.s3.CreateMultipartUpload: calling handler <function sse_md5 at 0x7f707e745940>
+2022-10-02 18:37:54,960:DEBUG:UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 2, 'extra_args': {}}) about to wait for the following futures [<s3transfer.futures.ExecutorFuture object at 0x7f707dea5be0>]
+2022-10-02 18:37:54,960:DEBUG:Submitting task CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f707de97100> for transfer request: 0.
+2022-10-02 18:37:54,960:DEBUG:Event before-parameter-build.s3.CreateMultipartUpload: calling handler <function validate_bucket_name at 0x7f707e7458b0>
+2022-10-02 18:37:54,960:DEBUG:UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 2, 'extra_args': {}}) about to wait for <s3transfer.futures.ExecutorFuture object at 0x7f707dea5be0>
+2022-10-02 18:37:54,961:DEBUG:Acquiring 0
+2022-10-02 18:37:54,961:DEBUG:Event before-parameter-build.s3.CreateMultipartUpload: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:54,962:DEBUG:CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) about to wait for the following futures [<s3transfer.futures.ExecutorFuture object at 0x7f707dea5be0>, <s3transfer.futures.ExecutorFuture object at 0x7f700e120310>, <s3transfer.futures.ExecutorFuture object at 0x7f700e120a60>]
+2022-10-02 18:37:54,962:DEBUG:Releasing acquire 0/None
+2022-10-02 18:37:54,962:DEBUG:Event before-parameter-build.s3.CreateMultipartUpload: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x7f707dec85e0>>
+2022-10-02 18:37:54,962:DEBUG:CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) about to wait for <s3transfer.futures.ExecutorFuture object at 0x7f707dea5be0>
+2022-10-02 18:37:54,963:DEBUG:Event before-parameter-build.s3.CreateMultipartUpload: calling handler <function generate_idempotent_uuid at 0x7f707e745700>
+2022-10-02 18:37:54,964:DEBUG:Event before-call.s3.CreateMultipartUpload: calling handler <function add_expect_header at 0x7f707e745c10>
+2022-10-02 18:37:54,964:DEBUG:Event before-call.s3.CreateMultipartUpload: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:54,964:DEBUG:Event before-call.s3.CreateMultipartUpload: calling handler <function add_recursion_detection_header at 0x7f707e7453a0>
+2022-10-02 18:37:54,964:DEBUG:Event before-call.s3.CreateMultipartUpload: calling handler <function inject_api_version_header_if_needed at 0x7f707e747f70>
+2022-10-02 18:37:54,964:DEBUG:Making request for OperationModel(name=CreateMultipartUpload) with params: {'url_path': '/ciphersharmabucket1/Output/output.csv?uploads', 'query_string': {}, 'method': 'POST', 'headers': {'User-Agent': 'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploads', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x7f707e0814f0>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'ciphersharmabucket1'}}}
+2022-10-02 18:37:54,965:DEBUG:Event request-created.s3.CreateMultipartUpload: calling handler <function signal_not_transferring at 0x7f707dfb9790>
+2022-10-02 18:37:54,965:DEBUG:Event request-created.s3.CreateMultipartUpload: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f707e081520>>
+2022-10-02 18:37:54,965:DEBUG:Event choose-signer.s3.CreateMultipartUpload: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:54,966:DEBUG:Event choose-signer.s3.CreateMultipartUpload: calling handler <function set_operation_specific_signer at 0x7f707e7455e0>
+2022-10-02 18:37:54,966:DEBUG:Event before-sign.s3.CreateMultipartUpload: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:54,966:DEBUG:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2022-10-02 18:37:54,966:DEBUG:Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploads
+2022-10-02 18:37:54,967:DEBUG:URI updated to: https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploads
+2022-10-02 18:37:54,967:DEBUG:Calculating signature using v4 auth.
+2022-10-02 18:37:54,968:DEBUG:CanonicalRequest:
+POST
+/Output/output.csv
+uploads=
+host:ciphersharmabucket1.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20221002T130754Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2022-10-02 18:37:54,968:DEBUG:StringToSign:
+AWS4-HMAC-SHA256
+20221002T130754Z
+20221002/ap-south-1/s3/aws4_request
+ebfcd97e1a32e9cfc670d694b1207e89fd6e7e6d5e1ea8428cf6d8ad05ca7740
+2022-10-02 18:37:54,968:DEBUG:Signature:
+3e400a8045ad942f30bc7ddb4796bb21ed176e015581af02a186bba84216ea77
+2022-10-02 18:37:54,969:DEBUG:Event request-created.s3.CreateMultipartUpload: calling handler <function signal_transferring at 0x7f707dfb9820>
+2022-10-02 18:37:54,969:DEBUG:Event request-created.s3.CreateMultipartUpload: calling handler <function add_retry_headers at 0x7f707e74a670>
+2022-10-02 18:37:54,969:DEBUG:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploads, headers={'User-Agent': b'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84', 'X-Amz-Date': b'20221002T130754Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAZZXDASXGSGK7RFQR/20221002/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=3e400a8045ad942f30bc7ddb4796bb21ed176e015581af02a186bba84216ea77', 'amz-sdk-invocation-id': b'874b266d-90bc-46cc-b9ad-b10a144a03a4', 'amz-sdk-request': b'attempt=1', 'Content-Length': '0'}>
+2022-10-02 18:37:54,970:DEBUG:Certificate path: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/certifi/cacert.pem
+2022-10-02 18:37:54,970:DEBUG:Starting new HTTPS connection (1): ciphersharmabucket1.s3.ap-south-1.amazonaws.com:443
+2022-10-02 18:37:55,295:DEBUG:https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com:443 "POST /Output/output.csv?uploads HTTP/1.1" 200 None
+2022-10-02 18:37:55,299:DEBUG:Response headers: {'x-amz-id-2': 'aWVYkaVKCdn+GhmKOkcMVxtsyQLf1oZzz47UWTCoWvkxWgFXqAA/n1QKuaH3gnSJa0UVnOQi3B4=', 'x-amz-request-id': 'FAMCQEMV957904M0', 'Date': 'Sun, 02 Oct 2022 13:07:50 GMT', 'Transfer-Encoding': 'chunked', 'Server': 'AmazonS3'}
+2022-10-02 18:37:55,299:DEBUG:Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>ciphersharmabucket1</Bucket><Key>Output/output.csv</Key><UploadId>xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH</UploadId></InitiateMultipartUploadResult>'
+2022-10-02 18:37:55,300:DEBUG:Event needs-retry.s3.CreateMultipartUpload: calling handler <botocore.retryhandler.RetryHandler object at 0x7f707dec84c0>
+2022-10-02 18:37:55,300:DEBUG:No retry needed.
+2022-10-02 18:37:55,301:DEBUG:Event needs-retry.s3.CreateMultipartUpload: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:55,301:DEBUG:Releasing acquire 0/None
+2022-10-02 18:37:55,301:DEBUG:UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 1, 'extra_args': {}}) done waiting for dependent futures
+2022-10-02 18:37:55,302:DEBUG:UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 2, 'extra_args': {}}) done waiting for dependent futures
+2022-10-02 18:37:55,302:DEBUG:CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) about to wait for <s3transfer.futures.ExecutorFuture object at 0x7f700e120310>
+2022-10-02 18:37:55,302:DEBUG:Executing task UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 1, 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f707e081550>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f707dea5ee0>, 'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 1, 'extra_args': {}, 'upload_id': 'xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH'}
+2022-10-02 18:37:55,303:DEBUG:Executing task UploadPartTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 2, 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f707e081550>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f700e1205b0>, 'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'part_number': 2, 'extra_args': {}, 'upload_id': 'xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH'}
+2022-10-02 18:37:55,304:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function sse_md5 at 0x7f707e745940>
+2022-10-02 18:37:55,304:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function convert_body_to_file_like_object at 0x7f707e747e50>
+2022-10-02 18:37:55,305:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function validate_bucket_name at 0x7f707e7458b0>
+2022-10-02 18:37:55,305:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:55,304:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function sse_md5 at 0x7f707e745940>
+2022-10-02 18:37:55,305:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x7f707dec85e0>>
+2022-10-02 18:37:55,306:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function convert_body_to_file_like_object at 0x7f707e747e50>
+2022-10-02 18:37:55,306:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function generate_idempotent_uuid at 0x7f707e745700>
+2022-10-02 18:37:55,306:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function validate_bucket_name at 0x7f707e7458b0>
+2022-10-02 18:37:55,307:DEBUG:Event before-call.s3.UploadPart: calling handler <function conditionally_calculate_md5 at 0x7f707e881d30>
+2022-10-02 18:37:55,307:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:55,308:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x7f707dec85e0>>
+2022-10-02 18:37:55,308:DEBUG:Event before-parameter-build.s3.UploadPart: calling handler <function generate_idempotent_uuid at 0x7f707e745700>
+2022-10-02 18:37:55,308:DEBUG:Event before-call.s3.UploadPart: calling handler <function conditionally_calculate_md5 at 0x7f707e881d30>
+2022-10-02 18:37:55,316:DEBUG:Event before-call.s3.UploadPart: calling handler <function add_expect_header at 0x7f707e745c10>
+2022-10-02 18:37:55,316:DEBUG:Adding expect 100 continue header to request.
+2022-10-02 18:37:55,316:DEBUG:Event before-call.s3.UploadPart: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:55,316:DEBUG:Event before-call.s3.UploadPart: calling handler <function add_recursion_detection_header at 0x7f707e7453a0>
+2022-10-02 18:37:55,317:DEBUG:Event before-call.s3.UploadPart: calling handler <function inject_api_version_header_if_needed at 0x7f707e747f70>
+2022-10-02 18:37:55,317:DEBUG:Making request for OperationModel(name=UploadPart) with params: {'url_path': '/ciphersharmabucket1/Output/output.csv', 'query_string': {'uploadId': 'xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH', 'partNumber': 2}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84', 'Content-MD5': 'XgSOgQPRcuuZJGen8WplVw==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x7f700e1205b0>, 'url': 'https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=2', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x7f707e0814f0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'ciphersharmabucket1'}}}
+2022-10-02 18:37:55,317:DEBUG:Event request-created.s3.UploadPart: calling handler <function signal_not_transferring at 0x7f707dfb9790>
+2022-10-02 18:37:55,318:DEBUG:Event request-created.s3.UploadPart: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f707e081520>>
+2022-10-02 18:37:55,318:DEBUG:Event choose-signer.s3.UploadPart: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:55,318:DEBUG:Event choose-signer.s3.UploadPart: calling handler <function set_operation_specific_signer at 0x7f707e7455e0>
+2022-10-02 18:37:55,319:DEBUG:Event before-sign.s3.UploadPart: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:55,319:DEBUG:Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=2
+2022-10-02 18:37:55,319:DEBUG:URI updated to: https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=2
+2022-10-02 18:37:55,319:DEBUG:Calculating signature using v4 auth.
+2022-10-02 18:37:55,320:DEBUG:CanonicalRequest:
+PUT
+/Output/output.csv
+partNumber=2&uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH
+content-md5:XgSOgQPRcuuZJGen8WplVw==
+host:ciphersharmabucket1.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20221002T130755Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2022-10-02 18:37:55,320:DEBUG:StringToSign:
+AWS4-HMAC-SHA256
+20221002T130755Z
+20221002/ap-south-1/s3/aws4_request
+6e1837ebd6d715f5b267f558b8f0d49e2ee2d70ad0cc873fb5748f21e305face
+2022-10-02 18:37:55,320:DEBUG:Signature:
+19dde40ad8af91b257f4bd441045602df44b9166cdddb6cbb657db7639c0703b
+2022-10-02 18:37:55,321:DEBUG:Event request-created.s3.UploadPart: calling handler <function signal_transferring at 0x7f707dfb9820>
+2022-10-02 18:37:55,321:DEBUG:Event request-created.s3.UploadPart: calling handler <function add_retry_headers at 0x7f707e74a670>
+2022-10-02 18:37:55,321:DEBUG:Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=2, headers={'User-Agent': b'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84', 'Content-MD5': b'XgSOgQPRcuuZJGen8WplVw==', 'Expect': b'100-continue', 'X-Amz-Date': b'20221002T130755Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAZZXDASXGSGK7RFQR/20221002/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=19dde40ad8af91b257f4bd441045602df44b9166cdddb6cbb657db7639c0703b', 'amz-sdk-invocation-id': b'045fb6c3-a00b-46f9-ade9-d6eb14f81472', 'amz-sdk-request': b'attempt=1', 'Content-Length': '2534649'}>
+2022-10-02 18:37:55,322:DEBUG:Certificate path: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/certifi/cacert.pem
+2022-10-02 18:37:55,322:DEBUG:Waiting for 100 Continue response.
+2022-10-02 18:37:55,330:DEBUG:Event before-call.s3.UploadPart: calling handler <function add_expect_header at 0x7f707e745c10>
+2022-10-02 18:37:55,330:DEBUG:Adding expect 100 continue header to request.
+2022-10-02 18:37:55,330:DEBUG:Event before-call.s3.UploadPart: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:55,331:DEBUG:Event before-call.s3.UploadPart: calling handler <function add_recursion_detection_header at 0x7f707e7453a0>
+2022-10-02 18:37:55,331:DEBUG:Event before-call.s3.UploadPart: calling handler <function inject_api_version_header_if_needed at 0x7f707e747f70>
+2022-10-02 18:37:55,331:DEBUG:Making request for OperationModel(name=UploadPart) with params: {'url_path': '/ciphersharmabucket1/Output/output.csv', 'query_string': {'uploadId': 'xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH', 'partNumber': 1}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84', 'Content-MD5': 'l2TbydMOH2mATwu5hW+L9Q==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x7f707dea5ee0>, 'url': 'https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=1', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x7f707e0814f0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'ciphersharmabucket1'}}}
+2022-10-02 18:37:55,332:DEBUG:Event request-created.s3.UploadPart: calling handler <function signal_not_transferring at 0x7f707dfb9790>
+2022-10-02 18:37:55,332:DEBUG:Event request-created.s3.UploadPart: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f707e081520>>
+2022-10-02 18:37:55,332:DEBUG:Event choose-signer.s3.UploadPart: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:55,332:DEBUG:Event choose-signer.s3.UploadPart: calling handler <function set_operation_specific_signer at 0x7f707e7455e0>
+2022-10-02 18:37:55,333:DEBUG:Event before-sign.s3.UploadPart: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:55,333:DEBUG:Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=1
+2022-10-02 18:37:55,333:DEBUG:URI updated to: https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=1
+2022-10-02 18:37:55,334:DEBUG:Calculating signature using v4 auth.
+2022-10-02 18:37:55,334:DEBUG:CanonicalRequest:
+PUT
+/Output/output.csv
+partNumber=1&uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH
+content-md5:l2TbydMOH2mATwu5hW+L9Q==
+host:ciphersharmabucket1.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20221002T130755Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2022-10-02 18:37:55,334:DEBUG:StringToSign:
+AWS4-HMAC-SHA256
+20221002T130755Z
+20221002/ap-south-1/s3/aws4_request
+fd89d5334d0aadfcc28dbfa5402b3016898935493a3eaf596e4e0454f335c700
+2022-10-02 18:37:55,335:DEBUG:Signature:
+d888b096d761b20c087e2aa111a97c59a26e72e8c75fbb991286a3524e38e446
+2022-10-02 18:37:55,335:DEBUG:Event request-created.s3.UploadPart: calling handler <function signal_transferring at 0x7f707dfb9820>
+2022-10-02 18:37:55,335:DEBUG:Event request-created.s3.UploadPart: calling handler <function add_retry_headers at 0x7f707e74a670>
+2022-10-02 18:37:55,335:DEBUG:Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=1, headers={'User-Agent': b'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84', 'Content-MD5': b'l2TbydMOH2mATwu5hW+L9Q==', 'Expect': b'100-continue', 'X-Amz-Date': b'20221002T130755Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAZZXDASXGSGK7RFQR/20221002/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=d888b096d761b20c087e2aa111a97c59a26e72e8c75fbb991286a3524e38e446', 'amz-sdk-invocation-id': b'926c8c29-c5ab-4d35-b433-92c0ed470a40', 'amz-sdk-request': b'attempt=1', 'Content-Length': '8388608'}>
+2022-10-02 18:37:55,336:DEBUG:Certificate path: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/certifi/cacert.pem
+2022-10-02 18:37:55,336:DEBUG:Starting new HTTPS connection (2): ciphersharmabucket1.s3.ap-south-1.amazonaws.com:443
+2022-10-02 18:37:55,390:DEBUG:100 Continue response seen, now sending request body.
+2022-10-02 18:37:55,499:DEBUG:Waiting for 100 Continue response.
+2022-10-02 18:37:55,569:DEBUG:100 Continue response seen, now sending request body.
+2022-10-02 18:37:55,970:DEBUG:https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com:443 "PUT /Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=2 HTTP/1.1" 200 0
+2022-10-02 18:37:55,970:DEBUG:Response headers: {'x-amz-id-2': '0kFNMtpWY1YUkD0717VVgf/S7Yew/pnIxBvz524UcMU49+9cs8Pf5yCyB1fA63Xy1vUawGAQvDE=', 'x-amz-request-id': 'FAM7Z7ZZPZQP177A', 'Date': 'Sun, 02 Oct 2022 13:07:50 GMT', 'ETag': '"5e048e8103d172eb992467a7f16a6557"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2022-10-02 18:37:55,971:DEBUG:Response body:
+b''
+2022-10-02 18:37:55,971:DEBUG:Event needs-retry.s3.UploadPart: calling handler <botocore.retryhandler.RetryHandler object at 0x7f707dec84c0>
+2022-10-02 18:37:55,972:DEBUG:No retry needed.
+2022-10-02 18:37:55,972:DEBUG:Event needs-retry.s3.UploadPart: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:55,973:DEBUG:Releasing acquire 0/None
+2022-10-02 18:37:58,068:DEBUG:https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com:443 "PUT /Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH&partNumber=1 HTTP/1.1" 200 0
+2022-10-02 18:37:58,069:DEBUG:Response headers: {'x-amz-id-2': 'MpFiXK4COC0YUVOFlqMTE8phTPJJQhfIHJem6Y8azQNirBo+DYPHrziOSrnspJGNGzimLCiMHJA=', 'x-amz-request-id': 'FAM1B2Q0831FKD0R', 'Date': 'Sun, 02 Oct 2022 13:07:50 GMT', 'ETag': '"9764dbc9d30e1f69804f0bb9856f8bf5"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2022-10-02 18:37:58,069:DEBUG:Response body:
+b''
+2022-10-02 18:37:58,070:DEBUG:Event needs-retry.s3.UploadPart: calling handler <botocore.retryhandler.RetryHandler object at 0x7f707dec84c0>
+2022-10-02 18:37:58,070:DEBUG:No retry needed.
+2022-10-02 18:37:58,070:DEBUG:Event needs-retry.s3.UploadPart: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:58,071:DEBUG:Releasing acquire 0/None
+2022-10-02 18:37:58,071:DEBUG:CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) about to wait for <s3transfer.futures.ExecutorFuture object at 0x7f700e120a60>
+2022-10-02 18:37:58,072:DEBUG:CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) done waiting for dependent futures
+2022-10-02 18:37:58,072:DEBUG:Executing task CompleteMultipartUploadTask(transfer_id=0, {'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f707e081550>, 'bucket': 'ciphersharmabucket1', 'key': 'Output/output.csv', 'extra_args': {}, 'upload_id': 'xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH', 'parts': [{'ETag': '"9764dbc9d30e1f69804f0bb9856f8bf5"', 'PartNumber': 1}, {'ETag': '"5e048e8103d172eb992467a7f16a6557"', 'PartNumber': 2}]}
+2022-10-02 18:37:58,073:DEBUG:Event before-parameter-build.s3.CompleteMultipartUpload: calling handler <function validate_bucket_name at 0x7f707e7458b0>
+2022-10-02 18:37:58,073:DEBUG:Event before-parameter-build.s3.CompleteMultipartUpload: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:58,074:DEBUG:Event before-parameter-build.s3.CompleteMultipartUpload: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x7f707dec85e0>>
+2022-10-02 18:37:58,074:DEBUG:Event before-parameter-build.s3.CompleteMultipartUpload: calling handler <function generate_idempotent_uuid at 0x7f707e745700>
+2022-10-02 18:37:58,074:DEBUG:Event before-call.s3.CompleteMultipartUpload: calling handler <function add_expect_header at 0x7f707e745c10>
+2022-10-02 18:37:58,075:DEBUG:Event before-call.s3.CompleteMultipartUpload: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:58,075:DEBUG:Event before-call.s3.CompleteMultipartUpload: calling handler <function add_recursion_detection_header at 0x7f707e7453a0>
+2022-10-02 18:37:58,075:DEBUG:Event before-call.s3.CompleteMultipartUpload: calling handler <function inject_api_version_header_if_needed at 0x7f707e747f70>
+2022-10-02 18:37:58,076:DEBUG:Making request for OperationModel(name=CompleteMultipartUpload) with params: {'url_path': '/ciphersharmabucket1/Output/output.csv', 'query_string': {'uploadId': 'xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH'}, 'method': 'POST', 'headers': {'User-Agent': 'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84'}, 'body': b'<CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><ETag>"9764dbc9d30e1f69804f0bb9856f8bf5"</ETag><PartNumber>1</PartNumber></Part><Part><ETag>"5e048e8103d172eb992467a7f16a6557"</ETag><PartNumber>2</PartNumber></Part></CompleteMultipartUpload>', 'url': 'https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x7f707e0814f0>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'ciphersharmabucket1'}}}
+2022-10-02 18:37:58,076:DEBUG:Event request-created.s3.CompleteMultipartUpload: calling handler <function signal_not_transferring at 0x7f707dfb9790>
+2022-10-02 18:37:58,076:DEBUG:Event request-created.s3.CompleteMultipartUpload: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f707e081520>>
+2022-10-02 18:37:58,076:DEBUG:Event choose-signer.s3.CompleteMultipartUpload: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:58,077:DEBUG:Event choose-signer.s3.CompleteMultipartUpload: calling handler <function set_operation_specific_signer at 0x7f707e7455e0>
+2022-10-02 18:37:58,077:DEBUG:Event before-sign.s3.CompleteMultipartUpload: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x7f707dec8670>>
+2022-10-02 18:37:58,078:DEBUG:Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/ciphersharmabucket1/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH
+2022-10-02 18:37:58,078:DEBUG:URI updated to: https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH
+2022-10-02 18:37:58,078:DEBUG:Calculating signature using v4 auth.
+2022-10-02 18:37:58,078:DEBUG:CanonicalRequest:
+POST
+/Output/output.csv
+uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH
+host:ciphersharmabucket1.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:23fc01f2bca891688c18057d9169d4494bd96d1e1a1551413e112529650d3a52
+x-amz-date:20221002T130758Z
+
+host;x-amz-content-sha256;x-amz-date
+23fc01f2bca891688c18057d9169d4494bd96d1e1a1551413e112529650d3a52
+2022-10-02 18:37:58,078:DEBUG:StringToSign:
+AWS4-HMAC-SHA256
+20221002T130758Z
+20221002/ap-south-1/s3/aws4_request
+a64abb35b44a2e938e2f75fec3229ce9a192871a7304768251cf7bc847bea42c
+2022-10-02 18:37:58,079:DEBUG:Signature:
+7ac6a40ff7f0fb71e042d3bd89aa9a1abb5cdb7a37c8111a8b9bb4b40969393f
+2022-10-02 18:37:58,079:DEBUG:Event request-created.s3.CompleteMultipartUpload: calling handler <function signal_transferring at 0x7f707dfb9820>
+2022-10-02 18:37:58,079:DEBUG:Event request-created.s3.CompleteMultipartUpload: calling handler <function add_retry_headers at 0x7f707e74a670>
+2022-10-02 18:37:58,079:DEBUG:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH, headers={'User-Agent': b'Boto3/1.24.84 Python/3.8.10 Linux/5.10.102.1-microsoft-standard-WSL2 Botocore/1.27.84', 'X-Amz-Date': b'20221002T130758Z', 'X-Amz-Content-SHA256': b'23fc01f2bca891688c18057d9169d4494bd96d1e1a1551413e112529650d3a52', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAZZXDASXGSGK7RFQR/20221002/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7ac6a40ff7f0fb71e042d3bd89aa9a1abb5cdb7a37c8111a8b9bb4b40969393f', 'amz-sdk-invocation-id': b'3396322f-8ba3-4496-8e58-b7779290e7b6', 'amz-sdk-request': b'attempt=1', 'Content-Length': '271'}>
+2022-10-02 18:37:58,080:DEBUG:Certificate path: /mnt/d/Code/SteelEye Assignment/venv/lib/python3.8/site-packages/certifi/cacert.pem
+2022-10-02 18:37:58,163:DEBUG:https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com:443 "POST /Output/output.csv?uploadId=xfWcfkd1YgrTMB1f66wn6bDIOKv8tdGsxeKleZEmABBfoT_npyaoYtnDMJopE6WeXzLx3phYOl3bLukTS41Ela...PtlpDvr10vXHzUZesxi2iq.JHCQ8vGx8Z8_ZtDH HTTP/1.1" 200 None
+2022-10-02 18:37:58,217:DEBUG:Response headers: {'x-amz-id-2': '5I+7/Fsj4K2cUe0db8rRuiAx9g4CDv6DVcENMmyLHFyADcvJ0Dn9m89Kuve7J8D4gSKwzS54zv0=', 'x-amz-request-id': 'J8HP5K39241HXZDA', 'Date': 'Sun, 02 Oct 2022 13:07:52 GMT', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Server': 'AmazonS3'}
+2022-10-02 18:37:58,217:DEBUG:Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n\n<CompleteMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Location>https://ciphersharmabucket1.s3.ap-south-1.amazonaws.com/Output%2Foutput.csv</Location><Bucket>ciphersharmabucket1</Bucket><Key>Output/output.csv</Key><ETag>&quot;7e2a24fddf02588e5c0025549e8fd311-2&quot;</ETag></CompleteMultipartUploadResult>'
+2022-10-02 18:37:58,218:DEBUG:Event needs-retry.s3.CompleteMultipartUpload: calling handler <function check_for_200_error at 0x7f707e7454c0>
+2022-10-02 18:37:58,218:DEBUG:Event needs-retry.s3.CompleteMultipartUpload: calling handler <botocore.retryhandler.RetryHandler object at 0x7f707dec84c0>
+2022-10-02 18:37:58,219:DEBUG:No retry needed.
+2022-10-02 18:37:58,219:DEBUG:Event needs-retry.s3.CompleteMultipartUpload: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x7f707dec8520>>
+2022-10-02 18:37:58,219:DEBUG:Releasing acquire 0/None
+2022-10-02 18:37:58,220:INFO: Script Ececuted Succesfully.....................

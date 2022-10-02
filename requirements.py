@@ -1,0 +1,17 @@
+autopep8==1.7.0
+boto3==1.24.84
+botocore==1.27.84
+certifi==2022.9.24
+charset-normalizer==2.1.1
+idna==3.4
+jmespath==1.0.1
+numpy==1.23.3
+pandas==1.5.0
+pycodestyle==2.9.1
+python-dateutil==2.8.2
+pytz==2022.2.1
+requests==2.28.1
+s3transfer==0.6.0
+six==1.16.0
+toml==0.10.2
+urllib3==1.26.12
