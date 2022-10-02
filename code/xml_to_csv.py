@@ -54,5 +54,5 @@ def write_to_csv(myLibrary):
         logging.info("Extracted XML file convereted to CSV")
     except Exception as e:
         logging.error('''An Exception has occured while Parsing 
-                      the Extraced XML file Named : {}''', format(e))
+                      the Extraced XML file Named : {}''', format(str(e)))
         raise e

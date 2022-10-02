@@ -14,6 +14,7 @@ import logging
 logging.basicConfig(filename="./code/logs.txt", level=logging.DEBUG,
                     format="%(asctime)s:%(levelname)s:%(message)s")
 
+""" Creating an S3 client using boto3 by providing it with the user Credentials """
 s3_client = boto3.client("s3", region_name="ap-south-1", aws_access_key_id="AKIAZZXDASXGSGK7RFQR",
                          aws_secret_access_key="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")
 
@@ -30,13 +31,13 @@ def upload_output_file(bucket, folder, file_to_upload, file_name):
 
     key = folder+"/"+file_name
     try:
-        response = s3_client.upload_file(file_to_upload, bucket, key)
         """ Here we are using a built in boto3 function to upload our file to the s3 bucket """
+        response = s3_client.upload_file(file_to_upload, bucket, key)
         
         logging.info("Output File Succesfully Uploaded to S3 bucket")
     except Exception as e:
         logging.error('''An Exception has occured while Uploading
-                      the Output file to S3 bucket. Named : {}''', format(e))
+                      the Output file to S3 bucket. Named : {}''', format(str(e)))
         raise e
 
 

@@ -39,7 +39,7 @@ def xml_extractor(group):
         logging.info("Succesfully Extracted all the Zip File Download Links")
     except Exception as e:
         logging.error('''An Exception has occured while Parsing 
-                      the Downloaded XML file Named : {}''', format(e))
+                      the Downloaded XML file Named : {}''', format(str(e)))
         raise e
 
     count = 1
@@ -57,7 +57,7 @@ def xml_extractor(group):
         logging.info("all the zip files have been downloaded Succesfully")
     except Exception as e:
         logging.error('''An Exception has occured while Downloading  
-                     the Zip files from the Obtained Links. Named : {}''', format(e))
+                     the Zip files from the Obtained Links. Named : {}''', format(str(e)))
         raise e
     
     count = 1
@@ -71,5 +71,5 @@ def xml_extractor(group):
         logging.info("all the zip files have been Extracted Succesfully")
     except Exception as e:
         logging.error('''An Exception has occured while Extracting   
-                     the Download Zip files. Named : {}''', format(e))
+                     the Download Zip files. Named : {}''', format(str(e)))
         raise e
