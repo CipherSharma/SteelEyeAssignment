@@ -49,6 +49,7 @@ try:
                 "./code/output1.csv", "output.csv")
 
     logging.info(" Script Ececuted Succesfully.....................")
+    print("Script Executed Succesfully....")
 except Exception as e:
     print("Exception occurded")
     logging.error('''An Exception has Occured While Executing The Script.
